@@ -75,8 +75,8 @@ fi
 # Restore build cache and timestamps
 if [ "x${OPENWRT_CUR_DIR}" != "x${OPENWRT_COMPILE_DIR}" ]; then
   echo "Syncing rebuilt source code to work directory..."
-  # sync files by comparing checksum
-  rsync -camv --no-t --delete "${sync_exclude_opts[@]}" \
+  # sync files by comparing checksum --delete
+  rsync -camv --no-t "${sync_exclude_opts[@]}" \
     "${OPENWRT_CUR_DIR}/" "${OPENWRT_COMPILE_DIR}/"
 
   rm -rf "${OPENWRT_CUR_DIR}"

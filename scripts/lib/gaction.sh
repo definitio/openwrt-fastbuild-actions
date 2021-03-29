@@ -24,6 +24,8 @@ _get_opt() {
   local opt_name="${1}"
   opt_name="$(tr '[:upper:]' '[:lower:]' <<<"${opt_name}")"
   local opt_default="${2}"
+  [ -z "$opt_name" ] && opt_default=${opt_name}
+  echo $opt_name $opt_default
   local opt_value
   if [ "x${GITHUB_EVENT_NAME}" = "xpush" ]; then
     local commit_message

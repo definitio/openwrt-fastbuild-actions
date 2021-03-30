@@ -6,4 +6,3 @@ set -eo pipefail
 source "${HOST_WORK_DIR}/scripts/host/docker.sh"
 
 docker_exec "${BUILDER_CONTAINER_ID}" "${BUILDER_WORK_DIR}/scripts/customize.sh"
-docker_exec "${BUILDER_CONTAINER_ID}" "${BUILDER_WORK_DIR}/scripts/update_feeds.sh"

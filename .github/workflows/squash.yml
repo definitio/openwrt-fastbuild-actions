@@ -22,6 +22,7 @@ name: Squash builders
 # Start every 24 hours
 on:
   deployment:
+  workflow_dispatch:
   schedule:
     - cron: '0 */24 * * *'
 

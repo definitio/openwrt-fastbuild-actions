@@ -1,5 +1,5 @@
---- a/feeds/node/node/Makefile
-+++ a/feeds/node/node/Makefile
+--- feeds/node/node/Makefile
++++ feeds/node/node/Makefile
 @@ -180,8 +180,10 @@
  endef
 

@@ -1,0 +1,257 @@
+Package: liblucihttp-lua
+Version: 2019-07-05-a34a17d5-1
+Depends: libc, liblucihttp0, liblua5.1.5
+Source: feeds/luci/contrib/package/lucihttp
+SourceName: liblucihttp-lua
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3141
+Filename: liblucihttp-lua_2019-07-05-a34a17d5-1_arm_cortex-a9_neon.ipk
+Size: 3906
+SHA256sum: 549c0bb7aecf3993ebb56fbc1a7698c73bfc381fa836ede9622ac134d5e7bc7c
+Description:  Lua binding for the LuCI HTTP utility library
+
+Package: liblucihttp0
+Version: 2019-07-05-a34a17d5-1
+Depends: libc
+Provides: liblucihttp
+Source: feeds/luci/contrib/package/lucihttp
+SourceName: liblucihttp
+License: ISC
+LicenseFiles: LICENSE
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 6852
+Filename: liblucihttp0_2019-07-05-a34a17d5-1_arm_cortex-a9_neon.ipk
+Size: 7661
+SHA256sum: 8c831d6e80566900e20c4128c0b295a59b226b60b2392dae10997e7dbb43c813
+Description:  LuCI HTTP utility library
+
+Package: luci-app-firewall
+Version: git-21.160.68865-15ca915-1
+Depends: libc, firewall
+Source: feeds/luci/applications/luci-app-firewall
+SourceName: luci-app-firewall
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 13979
+Filename: luci-app-firewall_git-21.160.68865-15ca915-1_all.ipk
+Size: 14689
+SHA256sum: ea3617ab9ad5a7e35ee4c1b7b7c3cd46c46d02f4c6be3cfc8acf813e9875b9ec
+Description:  Firewall and Portforwarding application
+
+Package: luci-app-opkg
+Version: git-21.160.68865-15ca915-1
+Depends: libc, opkg
+Source: feeds/luci/applications/luci-app-opkg
+SourceName: luci-app-opkg
+Section: luci
+Architecture: all
+Installed-Size: 8276
+Filename: luci-app-opkg_git-21.160.68865-15ca915-1_all.ipk
+Size: 8993
+SHA256sum: 8531be248969097051e87f35db8e82cb86e93e70a3de8d0dc80d8ce4cd5ec49e
+Description:  OPKG package management application
+
+Package: luci-base
+Version: git-21.160.68865-15ca915-1
+Depends: libc, lua, luci-lib-nixio, luci-lib-ip, rpcd, libubus-lua, luci-lib-jsonc, liblucihttp-lua, rpcd-mod-file, rpcd-mod-luci, cgi-io
+Source: feeds/luci/modules/luci-base
+SourceName: luci-base
+License: MIT
+Section: luci
+Architecture: arm_cortex-a9_neon
+Installed-Size: 139460
+Filename: luci-base_git-21.160.68865-15ca915-1_arm_cortex-a9_neon.ipk
+Size: 140448
+SHA256sum: 7d9731bdc930397484cea3cced2b16bec700099b5ec1a58dbe84cc2f64668941
+Description:  LuCI core libraries
+
+Package: luci-lib-ip
+Version: git-21.160.68865-15ca915-1
+Depends: libc, liblua5.1.5, libnl-tiny
+Source: feeds/luci/libs/luci-lib-ip
+SourceName: luci-lib-ip
+License: Apache-2.0
+Section: luci
+Architecture: arm_cortex-a9_neon
+Installed-Size: 10536
+Filename: luci-lib-ip_git-21.160.68865-15ca915-1_arm_cortex-a9_neon.ipk
+Size: 11303
+SHA256sum: 05bce9f571295c948e969f38b080f3835bd8dea9bf1889779b2621c2ccd50524
+Description:  Lua library for IP calculation and routing information
+
+Package: luci-lib-jsonc
+Version: git-21.160.68865-15ca915-1
+Depends: libc, liblua5.1.5, libjson-c2
+Source: feeds/luci/libs/luci-lib-jsonc
+SourceName: luci-lib-jsonc
+Section: luci
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3663
+Filename: luci-lib-jsonc_git-21.160.68865-15ca915-1_arm_cortex-a9_neon.ipk
+Size: 4364
+SHA256sum: 15bcf22b2febe57e8746b772ece4bfa1bb18373f5dc78ec87ecc89fd21b7cc08
+Description:  Lua binding for JSON-C
+
+Package: luci-lib-nixio
+Version: git-21.160.68865-15ca915-1
+Depends: libc, liblua5.1.5
+Source: feeds/luci/libs/luci-lib-nixio
+SourceName: luci-lib-nixio
+License: Apache-2.0
+Section: luci
+Architecture: arm_cortex-a9_neon
+Installed-Size: 29130
+Filename: luci-lib-nixio_git-21.160.68865-15ca915-1_arm_cortex-a9_neon.ipk
+Size: 29573
+SHA256sum: 97962900911eb507a68d8a9d45514e0109b30d779a0b3a2e290190f5c0dceef9
+Description:  NIXIO POSIX library
+
+Package: luci-mod-admin-full
+Version: git-21.160.68865-15ca915-1
+Depends: libc, luci-base, luci-mod-status, luci-mod-system, luci-mod-network
+Source: feeds/luci/modules/luci-mod-admin-full
+SourceName: luci-mod-admin-full
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 104
+Filename: luci-mod-admin-full_git-21.160.68865-15ca915-1_all.ipk
+Size: 841
+SHA256sum: a5a179ab71dde9150bd97f99ad3843d0f6a1273bae6ea10394828a77b8701d5c
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-mod-network
+Version: git-21.160.68865-15ca915-1
+Depends: libc, luci-base, libiwinfo-lua, rpcd-mod-iwinfo
+Source: feeds/luci/modules/luci-mod-network
+SourceName: luci-mod-network
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 32571
+Filename: luci-mod-network_git-21.160.68865-15ca915-1_all.ipk
+Size: 33547
+SHA256sum: ecdccd7a601cdada9a1a2f6e12cfcd76a953aa3b201a2ba8fc9450d7186fec90
+Description:  LuCI Network Administration
+
+Package: luci-mod-status
+Version: git-21.160.68865-15ca915-1
+Depends: libc, luci-base, libiwinfo20181126, libiwinfo-lua
+Source: feeds/luci/modules/luci-mod-status
+SourceName: luci-mod-status
+License: Apache-2.0
+Section: luci
+Architecture: arm_cortex-a9_neon
+Installed-Size: 24130
+Filename: luci-mod-status_git-21.160.68865-15ca915-1_arm_cortex-a9_neon.ipk
+Size: 24839
+SHA256sum: 508e0b0f511a387c9a5ee009b0c0b11d86348a7a8f96436f56f5f7af5c857b96
+Description:  LuCI Status Pages
+
+Package: luci-mod-system
+Version: git-21.160.68865-15ca915-1
+Depends: libc, luci-base
+Source: feeds/luci/modules/luci-mod-system
+SourceName: luci-mod-system
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 16195
+Filename: luci-mod-system_git-21.160.68865-15ca915-1_all.ipk
+Size: 16902
+SHA256sum: 665ca89e3e7dc9cbb00633570815f349b5c7ac93ed7bcd66bde1cf23da994e16
+Description:  LuCI Administration - Global System Settings
+
+Package: luci-proto-ipv6
+Version: git-21.160.68865-15ca915-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ipv6
+SourceName: luci-proto-ipv6
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2834
+Filename: luci-proto-ipv6_git-21.160.68865-15ca915-1_all.ipk
+Size: 3551
+SHA256sum: 369fb836df1ac7b089322d4d7616d8c1575b947c375f1e948dac28e8a7445240
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite
+
+Package: luci-proto-ppp
+Version: git-21.160.68865-15ca915-1
+Depends: libc
+Source: feeds/luci/protocols/luci-proto-ppp
+SourceName: luci-proto-ppp
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 2366
+Filename: luci-proto-ppp_git-21.160.68865-15ca915-1_all.ipk
+Size: 3053
+SHA256sum: c1c88c17a4aee65cdfa48ac5ad3af6fdf23b63ceb37304c6d4a33ceee0aa0bfb
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-theme-bootstrap
+Version: git-21.160.68865-15ca915-1
+Depends: libc
+Source: feeds/luci/themes/luci-theme-bootstrap
+SourceName: luci-theme-bootstrap
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 13163
+Filename: luci-theme-bootstrap_git-21.160.68865-15ca915-1_all.ipk
+Size: 14009
+SHA256sum: 349438d94b7c9b8d8dca94698fb33705f061cfbaaa09d1645056e793523101c6
+Description:  Bootstrap Theme (default)
+
+Package: luci
+Version: git-21.160.68865-15ca915-1
+Depends: libc, uhttpd, luci-mod-admin-full, luci-theme-bootstrap, luci-app-firewall, luci-app-opkg, luci-proto-ppp, libiwinfo-lua, luci-proto-ipv6, rpcd-mod-rrdns
+Source: feeds/luci/collections/luci
+SourceName: luci
+License: Apache-2.0
+Section: luci
+Architecture: all
+Installed-Size: 104
+Filename: luci_git-21.160.68865-15ca915-1_all.ipk
+Size: 915
+SHA256sum: 9e91693e2befa5c85d72eb7a76ac79db057a69fce3df164ac104147ce34669d2
+Description:  Standard OpenWrt set including full admin with ppp support and the default Bootstrap theme
+
+Package: rpcd-mod-luci
+Version: 20201107
+Depends: libc, rpcd, libubox20191228, libubus20191227, libnl-tiny
+Source: feeds/luci/libs/rpcd-mod-luci
+SourceName: rpcd-mod-luci
+License: Apache-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 12049
+Filename: rpcd-mod-luci_20201107_arm_cortex-a9_neon.ipk
+Size: 12902
+SHA256sum: fa7e708a05a2e61945471b871537f5998c227eb4cf312ca083350554805be1f5
+Description:  Provides LuCI backend ubus RPC operations.
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox20191228, libubus20191227
+Source: feeds/luci/libs/rpcd-mod-rrdns
+SourceName: rpcd-mod-rrdns
+License: Apache-2.0
+Section: libs
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3486
+Filename: rpcd-mod-rrdns_20170710_arm_cortex-a9_neon.ipk
+Size: 4306
+SHA256sum: 2a2d8d4282112dbb5ff49f49f25008bb8cd3ff0ffa74785c80c0df55a45f6bc5
+Description:  Provides rapid mass reverse DNS lookup functionality.
+

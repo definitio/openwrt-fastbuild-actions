@@ -1,0 +1,1044 @@
+Package: base-files
+Version: 1408-r16046-59980f7aaf
+Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, fwtool
+License: GPL-2.0
+Section: base
+Architecture: arm_cortex-a9_neon
+Installed-Size: 46806
+Filename: base-files_1408-r16046-59980f7aaf_arm_cortex-a9_neon.ipk
+Size: 47786
+SHA256sum: 9d7b9379e11c44b219faf52a067dd6cb85404d7b4946ed1cdc0e78a57e1d3228
+Description:  This package contains a base filesystem and system scripts for OpenWrt.
+
+Package: dropbear
+Version: 2020.81-2
+Depends: libc
+Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+License: MIT
+Section: net
+CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
+Architecture: arm_cortex-a9_neon
+Installed-Size: 98066
+Filename: dropbear_2020.81-2_arm_cortex-a9_neon.ipk
+Size: 98706
+SHA256sum: fa7d9e448b248af6bcef1fa9f06356d5493f88f6924825e10334e47effbdfa98
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: fstools
+Version: 2021-01-04-c53b1882-1
+Depends: libc, ubox, ubi-utils
+License: GPL-2.0
+Section: base
+Architecture: arm_cortex-a9_neon
+Installed-Size: 15306
+Filename: fstools_2021-01-04-c53b1882-1_arm_cortex-a9_neon.ipk
+Size: 15975
+SHA256sum: 8658d9b1d31283791681952a49111a24fedc83d8a09a71e0fa7874c912663242
+Description:  OpenWrt filesystem tools
+
+Package: fwtool
+Version: 2019-11-12-8f7fe925-1
+Depends: libc
+License: GPL-2.0
+Section: utils
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3804
+Filename: fwtool_2019-11-12-8f7fe925-1_arm_cortex-a9_neon.ipk
+Size: 4572
+SHA256sum: f5d980b3f07d70e1589164b4fbf1553f50d81673dbc6d64e3ec859539ed1cc45
+Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: ip6tables
+Version: 1.8.7-1
+Depends: libc, kmod-ip6tables, iptables
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_neon
+Installed-Size: 218
+Filename: ip6tables_1.8.7-1_arm_cortex-a9_neon.ipk
+Size: 977
+SHA256sum: fdb6b17ca2084f1e7bafc5a1a92f16bb1085d811737d3752540cc8cc50ef9f3b
+Description:  IPv6 firewall administration tool
+
+Package: iptables
+Version: 1.8.7-1
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libxtables12
+License: GPL-2.0
+Section: net
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_neon
+Installed-Size: 24541
+Filename: iptables_1.8.7-1_arm_cortex-a9_neon.ipk
+Size: 25424
+SHA256sum: b9d0bae6b5f84e0c7274a2b21c39be5186a8ef99254afbdf9194048830e9da2a
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
+
+Package: kmod-ac97
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 105
+Filename: kmod-ac97_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 851
+SHA256sum: 0b624853d5478854c60fd837f31647a0fb2b9aa810a6c8e6f4c29347b23ad015
+Description:  The ac97 controller
+
+Package: kmod-bluetooth
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-usb-core, kmod-crypto-hash, kmod-crypto-ecb, kmod-lib-crc16, kmod-hid, kmod-crypto-cmac, kmod-regmap-core, kmod-crypto-ecdh
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 236235
+Filename: kmod-bluetooth_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 236020
+SHA256sum: 0b1743e15e9a844c2716083addfb5835a18dc73f03a6d0bf271b03494848a18d
+Description:  Kernel support for Bluetooth devices
+
+Package: kmod-button-hotplug
+Version: 5.4.111-3
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3371
+Filename: kmod-button-hotplug_5.4.111-3_arm_cortex-a9_neon.ipk
+Size: 4188
+SHA256sum: 1f565dd60a02e5a2b49362858b0d91bb677b7e619a8757468bcf7989838e4e14
+Description:  Kernel module to generate button uevent-s from input subsystem events.
+ If your device uses GPIO buttons, see gpio-button-hotplug.
+
+Package: kmod-cfg80211
+Version: 5.4.111+5.10.16-1-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), iw, wireless-regdb
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 165226
+Filename: kmod-cfg80211_5.4.111+5.10.16-1-1_arm_cortex-a9_neon.ipk
+Size: 165239
+SHA256sum: 0d4f591a91935ea3c4bdcade638ef8961a006962d67ea6188e7b7be6fd8955e0
+Description:  cfg80211 is the Linux wireless LAN (802.11) configuration API.
+
+Package: kmod-crypto-aead
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-crypto-null
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 235
+Filename: kmod-crypto-aead_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 985
+SHA256sum: 776ed6fb0857bdfd30d43f676f38d1dc890526cad987b13cf27018635c5c60d6
+Description:  CryptoAPI AEAD support
+
+Package: kmod-crypto-cmac
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2556
+Filename: kmod-crypto-cmac_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 3329
+SHA256sum: 999283505e7bea787e02fb0ad3827cb79fcb239c83fab7760b383f94c9474bb6
+Description:  Support for Cipher-based Message Authentication Code (CMAC)
+
+Package: kmod-crypto-ecb
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-crypto-manager
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 189
+Filename: kmod-crypto-ecb_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 951
+SHA256sum: a76ac120a35f4836068147763a7528e478f24ba31b6c83639fd5b3a54d064f97
+Description:  Electronic CodeBook CryptoAPI module
+
+Package: kmod-crypto-ecdh
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-crypto-kpp
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 14868
+Filename: kmod-crypto-ecdh_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 15602
+SHA256sum: 78be270d5e0b8901191eb7cfe258f0eb768bb8397ae265accf27d429c310ce42
+Description:  ECDH algorithm
+
+Package: kmod-crypto-hash
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 241
+Filename: kmod-crypto-hash_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 991
+SHA256sum: e1627871517662dc07ad5c572a6cfb84e1a3b9e62ef7cc3dade818401f9f6369
+Description:  CryptoAPI hash support
+
+Package: kmod-crypto-kpp
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 1530
+Filename: kmod-crypto-kpp_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 2313
+SHA256sum: f21919bde09242a7015a1d27e8f8aff8855f79098bc116489ee61b8ba12516c2
+Description:  Key-agreement Protocol Primitives
+
+Package: kmod-crypto-manager
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-crypto-aead, kmod-crypto-hash, kmod-crypto-pcompress
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 241
+Filename: kmod-crypto-manager_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 1008
+SHA256sum: b4592b16768985ac039298d623c78b4c6ea11196a52fac12b61d415362685a75
+Description:  CryptoAPI algorithm manager
+
+Package: kmod-crypto-null
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-crypto-hash
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 196
+Filename: kmod-crypto-null_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 944
+SHA256sum: 2112a241d6a6fdfb4bfa9b53379121ec1e3793ff3aebebc8b463a1bf505a9769
+Description:  Null CryptoAPI module
+
+Package: kmod-crypto-pcompress
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 105
+Filename: kmod-crypto-pcompress_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 859
+SHA256sum: 8706d4ee0c3b7f55332dde3369c7e812a26ac6a6532cb71d5106f73f7057f72e
+Description:  CryptoAPI Partial (de)compression operations
+
+Package: kmod-hid
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-input-core, kmod-input-evdev
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 51283
+Filename: kmod-hid_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 49741
+SHA256sum: 6bf6f49d7a4eadc954303f4b19f09e418b78e703d114667d64e9e9371832738f
+Description:  Kernel modules for HID devices
+
+Package: kmod-i2c-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 193
+Filename: kmod-i2c-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 944
+SHA256sum: ebd977eb7bbf8452b0b8c1311eea9cb1a7009774c58fb7fa194cf3d810a078fa
+Description:  Kernel modules for I2C support
+
+Package: kmod-iio-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 27979
+Filename: kmod-iio-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 28681
+SHA256sum: 12dcb62bfe7a04d1a4493cabf1ac6cceefb528f8ead4842c29125e0caf00cb2e
+Description:  The industrial I/O subsystem provides a unified framework for
+ drivers for many different types of embedded sensors using a
+ number of different physical interfaces (i2c, spi, etc)
+
+Package: kmod-iio-kfifo-buf
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-iio-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2276
+Filename: kmod-iio-kfifo-buf_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 3108
+SHA256sum: 8208da26b7f45c80e97a37089cda88298478fa558990a41a29468b76075916d5
+Description:  A simple fifo based on kfifo.  Note that this currently provides no buffer
+ events so it is up to userspace to work out how often to read from the buffer.
+
+Package: kmod-iio-vf610
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-i2c-core, kmod-iio-core, kmod-industrialio-triggered-buffer
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 5436
+Filename: kmod-iio-vf610_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 6256
+SHA256sum: 7650170d2b4e74c8203ad3ec6b550269e4ad68b3d18f5bb7c1873a9f2b6f4c22
+Description:  Support for Vybrid board analog-to-digital converter.
+
+Package: kmod-industrialio-triggered-buffer
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-iio-core, kmod-iio-kfifo-buf
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 1742
+Filename: kmod-industrialio-triggered-buffer_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 2558
+SHA256sum: c9570015403625c084ef8ee57398e1b5117503f12d13ca7ad62317a71ff56145
+Description:  Provides helper functions for setting up triggered buffers.
+
+Package: kmod-input-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 19658
+Filename: kmod-input-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 20401
+SHA256sum: ee110277dcee47ce3a76622ff6a38aecc2674c6f8b02c1e74dc0a58836e09b2e
+Description:  Kernel modules for support of input device
+
+Package: kmod-input-evdev
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 7920
+Filename: kmod-input-evdev_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 8714
+SHA256sum: 2119a21106cbec7b3566179374774c2261215a491ea9590900b13f0d162c9260
+Description:  Kernel modules for support of input device events
+
+Package: kmod-input-gpio-keys
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 6496
+Filename: kmod-input-gpio-keys_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 7420
+SHA256sum: e46c92c0248e878e2dcde6e9b3af2b897e6f67d5e06395f9ff6725645ed40988
+Description:  This driver implements support for buttons connected
+ to GPIO pins of various CPUs (and some other chips).
+ 
+ See also gpio-button-hotplug which is an alternative, lower overhead
+ implementation that generates uevents instead of kernel input events.
+
+Package: kmod-ip6tables
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-nf-reject6, kmod-nf-ipt6, kmod-ipt-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 7625
+Filename: kmod-ip6tables_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 8420
+SHA256sum: 416ab902375db504afcab84282e0cb370c2d237f8aed3cf6098bc8ef530caf39
+Description:  Netfilter IPv6 firewalling support
+
+Package: kmod-ipt-conntrack
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-ipt-core, kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3064
+Filename: kmod-ipt-conntrack_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 3890
+SHA256sum: e83d10dc161c58a33bf35df6942f62c6d0539ad8549fcfe11cd874f2cd808e4f
+Description:  Netfilter (IPv4) kernel modules for connection tracking
+ Includes:
+ - conntrack
+ - defrag
+ - iptables_raw
+ - NOTRACK
+ - state
+
+Package: kmod-ipt-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-nf-reject, kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 18485
+Filename: kmod-ipt-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 19289
+SHA256sum: 0b8d1eb5ca014430f0436e1bb8d9a535d28e538407eaacda9c59aff0fdb62489
+Description:  Netfilter core kernel modules
+ Includes:
+ - comment
+ - limit
+ - LOG
+ - mac
+ - multiport
+ - REJECT
+ - TCPMSS
+
+Package: kmod-ipt-nat
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-ipt-core, kmod-nf-nat
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 4688
+Filename: kmod-ipt-nat_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 5489
+SHA256sum: fc63156f5c8c6edbc11914c558ea11b63dab851cce078034afdcfa1d520ec627
+Description:  Netfilter (IPv4) kernel modules for basic NAT targets
+ Includes:
+ - MASQUERADE
+
+Package: kmod-ipt-offload
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-ipt-core, kmod-nf-flow
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3500
+Filename: kmod-ipt-offload_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 4257
+SHA256sum: 8e53cef90d8198b93df70a11661d3fd5fd3f10f0297a0e1bb208e66f281d9a6a
+Description:  Netfilter routing/NAT offload support
+
+Package: kmod-ledtrig-activity
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2742
+Filename: kmod-ledtrig-activity_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 3508
+SHA256sum: 3270e7ef36eb69b4f04aa6af3b2fb62bd17c59822cdf3b3242cc2dc0695a92e8
+Description:  Kernel module that allows LEDs to blink based on system load
+
+Package: kmod-ledtrig-gpio
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2420
+Filename: kmod-ledtrig-gpio_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 3182
+SHA256sum: 0e011f7442507964633532b300ea9456ba9552b63549e531a4f936a09050106b
+Description:  Kernel module that allows LEDs to be controlled by gpio events
+
+Package: kmod-ledtrig-oneshot
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2098
+Filename: kmod-ledtrig-oneshot_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 2873
+SHA256sum: c4b05eac7d7386f28be9c5d08d4b060128c464fc4cd12570706ef7ceb567f76b
+Description:  Kernel module that allows LEDs to be triggered by sporadic events in
+ one-shot pulses
+
+Package: kmod-ledtrig-transient
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2214
+Filename: kmod-ledtrig-transient_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 2980
+SHA256sum: 9408973a8b8513585b263ba5046d173f5ae8a1a3912830a53f59595a296d899f
+Description:  Kernel module that allows LEDs one time activation of a transient state.
+
+Package: kmod-lib-crc-ccitt
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2213
+Filename: kmod-lib-crc-ccitt_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 2992
+SHA256sum: bdcfbae7c61c78f40f328da08ca6a76e568c3898aeaa542833c797d37e9a1320
+Description:  Kernel module for CRC-CCITT support
+
+Package: kmod-lib-crc16
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 230
+Filename: kmod-lib-crc16_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 983
+SHA256sum: b69aa9d65b3db3d3f9da06397dc855eb8b64cf3be08d3fa029c99ef9c2eae9fb
+Description:  Kernel module for CRC16 support
+
+Package: kmod-lumi-8189es-wifi
+Version: 5.4.111-5.3.3.1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-cfg80211
+Provides: kmod-rtl8189es
+License: GPLv2
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 725143
+Filename: kmod-lumi-8189es-wifi_5.4.111-5.3.3.1_arm_cortex-a9_neon.ipk
+Size: 700975
+SHA256sum: ef6c0d2ce4ce10bf836f9c8a0ab4bff528950412f19dd7581b7a55b98df0e68d
+Description:  Wireless Drivers for Xiaomi Lumi Gw Realtek rtl8189es wifi module
+
+Package: kmod-lumi-8723bs-wifi
+Version: 5.4.111-5.2.17.1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-cfg80211
+Provides: kmod-rtl8723bs
+License: GPLv2
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 839263
+Filename: kmod-lumi-8723bs-wifi_5.4.111-5.2.17.1_arm_cortex-a9_neon.ipk
+Size: 821494
+SHA256sum: 659bfb394e6375d41ecefe6976001afd604d3fc55aadde5abafb5aa0df1375a7
+Description:  Wireless Drivers for Xiaomi Lumi Gw Realtek rtl8723bs wifi module
+
+Package: kmod-mac80211
+Version: 5.4.111+5.10.16-1-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-cfg80211, hostapd-common
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 299091
+Filename: kmod-mac80211_5.4.111+5.10.16-1-1_arm_cortex-a9_neon.ipk
+Size: 297286
+SHA256sum: 85b001efbd95ab4d3d402c60f57574703c1569a40c8109a2c45a6a85f2c1b683
+Description:  Generic IEEE 802.11 Networking Stack (mac80211)
+
+Package: kmod-mmc
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 234
+Filename: kmod-mmc_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 980
+SHA256sum: 72e81542b5197da12ed0aeee9cf13239e3a356028692ed1835fa734e856fd2f1
+Description:  Kernel support for MMC/SD cards
+
+Package: kmod-nf-conntrack6
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 105
+Filename: kmod-nf-conntrack6_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 857
+SHA256sum: 87e3f2e3c680d4b86b4ffd10f6397624585a822db1faceeb0c9b0500f3ed7bce
+Description:  Netfilter IPv6 connection tracking
+
+Package: kmod-nf-conntrack
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 47983
+Filename: kmod-nf-conntrack_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 48623
+SHA256sum: 06e7bebcf973e26e7b814116385472c8bc2bb2a7bff006e21c4650063d4bc84a
+Description:  Netfilter connection tracking
+
+Package: kmod-nf-flow
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 11277
+Filename: kmod-nf-flow_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 12030
+SHA256sum: 6e20c0ac3b7ea2ba764c8b94c95a967ec33615699b1af9b12df7a0361356eed8
+Description:  Netfilter flowtable support
+
+Package: kmod-nf-ipt6
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-nf-ipt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 8804
+Filename: kmod-nf-ipt6_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 9571
+SHA256sum: e17ad75fc5d451cc501a2f9bfd6b0005447fa76038f9c0413eb882d155589530
+Description:  Ip6tables core
+
+Package: kmod-nf-ipt
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 18216
+Filename: kmod-nf-ipt_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 18948
+SHA256sum: 9e9008d197e8c24f67a8743221be334155b931fa6ebd8a00d2a53f8e436209be
+Description:  Iptables core
+
+Package: kmod-nf-nat
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-nf-conntrack
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 12991
+Filename: kmod-nf-nat_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 13735
+SHA256sum: ed693228e47f6d08c83630e716ae14dc2f5ab17b098c4255163c73c5854214e5
+Description:  Netfilter NAT
+
+Package: kmod-nf-reject6
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2528
+Filename: kmod-nf-reject6_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 3269
+SHA256sum: 8bd802993ad7c9b43b47dc0d7a1e101903d69a710aeac7eee5b2a11b263ee1b2
+Description:  Netfilter IPv6 reject support
+
+Package: kmod-nf-reject
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2121
+Filename: kmod-nf-reject_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 2899
+SHA256sum: ad1fba864f1bd081dc78c88d44d18e3a733d1ced465af663ab9415cee0351afa
+Description:  Netfilter IPv4 reject support
+
+Package: kmod-nls-base
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 105
+Filename: kmod-nls-base_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 871
+SHA256sum: bf40e5b76a9470f435b750df783697170469dac526b5da010a007dd38ad14a1e
+Description:  Kernel module for NLS (Native Language Support)
+
+Package: kmod-ppp
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-lib-crc-ccitt, kmod-slhc
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 23242
+Filename: kmod-ppp_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 23984
+SHA256sum: 7a472073646b135e88deb35b0cf263bdc5445086f5967f876dc89016f6b7654e
+Description:  Kernel modules for PPP support
+
+Package: kmod-pppoe
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-ppp, kmod-pppox
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 7378
+Filename: kmod-pppoe_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 8167
+SHA256sum: 55c9951a2a0e4232d55226b75333db377962becf13ce2f887575dd824add7b12
+Description:  Kernel module for PPPoE (PPP over Ethernet) support
+
+Package: kmod-pppox
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-ppp
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 1888
+Filename: kmod-pppox_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 2684
+SHA256sum: bc92964bb47a3abdf7e00cd544d6d2f9a18fc00a8991f554b99d2d90b42f38d9
+Description:  Kernel helper module for PPPoE and PPTP support
+
+Package: kmod-regmap-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba)
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 105
+Filename: kmod-regmap-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 848
+SHA256sum: 972f967682408eeebe267af134e25d0dad9437ede33b6eb1301ca0578364c703
+Description:  Generic register map support
+
+Package: kmod-slhc
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-lib-crc-ccitt
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3877
+Filename: kmod-slhc_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 4615
+SHA256sum: 28d3447e77bcf598fcb9880f6c4c82761e1399a34b9783e535b4f27f72588efc
+Description:  Serial Line Header Compression
+
+Package: kmod-sound-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-input-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 141036
+Filename: kmod-sound-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 141584
+SHA256sum: 39e6845e16432c12c24bda3c09f5e3c4e19a543ae2ac7375a42f73246670fafb
+Description:  Kernel modules for sound support
+
+Package: kmod-sound-soc-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-regmap-core, kmod-ac97, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 63268
+Filename: kmod-sound-soc-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 63598
+SHA256sum: aba89dd52ad8e52080de7a9d4a2ab6fb7886a91295cded91c9dcabd88cc04cc8
+Description:  SoC sound support
+
+Package: kmod-sound-soc-fsl-esai
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-sound-soc-imx, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 7514
+Filename: kmod-sound-soc-fsl-esai_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 8341
+SHA256sum: f71c0369df42d58116d66ab72add718c62778398b888aaae2cca4e46f41f18c8
+Description:  This package contains support for Enhanced Serial Audio
+ Interface (ESAI) module on i.MX boards
+
+Package: kmod-sound-soc-fsl-sai
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-sound-soc-imx, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 7421
+Filename: kmod-sound-soc-fsl-sai_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 8025
+SHA256sum: 7188368202fbb4d6c557a43513e0008de1998d0969fbbc0758654a10a905ba79
+Description:  This package contains support for Synchronous Audio
+ Interface (SAI) module on i.MX boards
+
+Package: kmod-sound-soc-fsl-utils
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-sound-soc-imx, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 105
+Filename: kmod-sound-soc-fsl-utils_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 900
+SHA256sum: 2d30e09b410299b15688e1fafa10a4bdb5b99c96256cdf43c3ed4aada03efe7e
+Description:  This package contains support for Freescale Sound SoC
+ utils module on i.MX boards
+
+Package: kmod-sound-soc-imx
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-sound-soc-core, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 12345
+Filename: kmod-sound-soc-imx_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 13071
+SHA256sum: 96d6cb433893ba698241974990b387871d9f3c1ba5891136cb56f4ebcfa822df
+Description:  Support for i.MX6 Platform sound (ssi/audmux/pcm)
+
+Package: kmod-sound-soc-tfa9882
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-sound-soc-imx, kmod-sound-soc-fsl-esai, kmod-sound-soc-fsl-sai, kmod-sound-soc-fsl-utils, kmod-sound-core
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 15027
+Filename: kmod-sound-soc-tfa9882_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 15791
+SHA256sum: e81b6d1d86903816dd13db944d051d7bc862e24125c12780755f636167d84421
+Description:  This package contains support for SoC audio tfa9882 on i.MX boards
+
+Package: kmod-usb-core
+Version: 5.4.111-1
+Depends: kernel (=5.4.111-1-f431d1d7d65fae8721a2816c05b6c3ba), kmod-nls-base
+License: GPL-2.0
+Section: kernel
+Architecture: arm_cortex-a9_neon
+Installed-Size: 238
+Filename: kmod-usb-core_5.4.111-1_arm_cortex-a9_neon.ipk
+Size: 986
+SHA256sum: 5fb7be4383c111c6cd03de76f2bdc8327ddc576a77599d8715c9f46d4b75755e
+Description:  Kernel support for USB
+
+Package: libatomic1
+Version: 8.4.0-3
+Depends: libgcc1
+Provides: libatomic
+License: GPL-3.0-with-GCC-exception
+Section: libs
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a9_neon
+Installed-Size: 4938
+Filename: libatomic1_8.4.0-3_arm_cortex-a9_neon.ipk
+Size: 5709
+SHA256sum: c97f2459f24e33ed96e32fef0e1cdeaf923d21917982871e8f21a893d4d32f7f
+Description:  Atomic support library
+
+Package: libgcc1
+Version: 8.4.0-3
+Provides: libgcc
+License: GPL-3.0-with-GCC-exception
+Section: libs
+ABIVersion: 1
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a9_neon
+Installed-Size: 19440
+Filename: libgcc1_8.4.0-3_arm_cortex-a9_neon.ipk
+Size: 20177
+SHA256sum: f588dfb6b652a480222eac19719fbc4d4ed3ecc69a881164964f4914e6ea2703
+Description:  GCC support library
+
+Package: libip4tc2
+Version: 1.8.7-1
+Depends: libc, libxtables12
+Provides: libip4tc
+License: GPL-2.0
+Section: libs
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_neon
+Installed-Size: 19564
+Filename: libip4tc2_1.8.7-1_arm_cortex-a9_neon.ipk
+Size: 20349
+SHA256sum: 23388f8d82b02e366456ab5f475fce00171bdf511c3662c10fa96ed7c6aeb2d6
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.7-1
+Depends: libc, libxtables12
+Provides: libip6tc
+License: GPL-2.0
+Section: libs
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_neon
+Installed-Size: 19239
+Filename: libip6tc2_1.8.7-1_arm_cortex-a9_neon.ipk
+Size: 20031
+SHA256sum: 9b34edd6551cfad125bc4d3309ff3618a6ce629aadd6c447aa9c2007a23e5b3f
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiwinfo-lua
+Version: 2021-01-31-4a32b33e-1
+Depends: libc, libiwinfo20210106, liblua5.1.5
+License: GPL-2.0
+Section: lang
+Architecture: arm_cortex-a9_neon
+Installed-Size: 6484
+Filename: libiwinfo-lua_2021-01-31-4a32b33e-1_arm_cortex-a9_neon.ipk
+Size: 7349
+SHA256sum: 9f8a6661f2e731e12a2513c8d8bdce496f8c63f47b0822377ce495298837479b
+Description:  This is the Lua binding for the iwinfo library. It provides access to all enabled
+ backends.
+
+Package: libiwinfo20210106
+Version: 2021-01-31-4a32b33e-1
+Depends: libc, libnl-tiny1, libuci20130104, libubus20210215
+Provides: libiwinfo
+License: GPL-2.0
+Section: libs
+ABIVersion: 20210106
+Architecture: arm_cortex-a9_neon
+Installed-Size: 27205
+Filename: libiwinfo20210106_2021-01-31-4a32b33e-1_arm_cortex-a9_neon.ipk
+Size: 28027
+SHA256sum: 367242703fd25f5d944fbcf66d6e6f308bc53c017c7f1940ec5840133dc7eeda
+Description:  Wireless information library with consistent interface for proprietary Broadcom,
+ nl80211 and wext driver interfaces.
+
+Package: libpthread
+Version: 1.1.24-3
+Depends: libgcc1
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a9_neon
+Installed-Size: 123
+Filename: libpthread_1.1.24-3_arm_cortex-a9_neon.ipk
+Size: 894
+SHA256sum: 53c7e12481a9a0bba2a681c39d416b92fd8b140034e7ad3c55c1631756212047
+Description:  POSIX thread library
+
+Package: librt
+Version: 1.1.24-3
+Depends: libpthread
+License: GPL-3.0-with-GCC-exception
+Section: libs
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a9_neon
+Installed-Size: 123
+Filename: librt_1.1.24-3_arm_cortex-a9_neon.ipk
+Size: 908
+SHA256sum: 3ab97c288ae98b7fa807ef19f2e1da835665eff53ec12e9f13eb6c637d4b81f3
+Description:  POSIX.1b RealTime extension library
+
+Package: libstdcpp6
+Version: 8.4.0-3
+Provides: libstdcpp
+License: GPL-3.0-with-GCC-exception
+Section: libs
+ABIVersion: 6
+Status: unknown hold not-installed
+Essential: yes
+Architecture: arm_cortex-a9_neon
+Installed-Size: 260157
+Filename: libstdcpp6_8.4.0-3_arm_cortex-a9_neon.ipk
+Size: 258252
+SHA256sum: e19ad91ccb543b8ce0874d9d2d5c8f56027e76963131dd293dbe154ec99c9581
+Description:  GNU Standard C++ Library v3
+
+Package: libxtables12
+Version: 1.8.7-1
+Depends: libc
+Provides: libxtables
+License: GPL-2.0
+Section: libs
+ABIVersion: 12
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_neon
+Installed-Size: 43870
+Filename: libxtables12_1.8.7-1_arm_cortex-a9_neon.ipk
+Size: 44572
+SHA256sum: 24b80c64bb8c8e73610ddd0990e9790cb75e175c8d77036337d0a75392e56bfe
+Description:  IPv4/IPv6 firewall - shared xtables library
+
+Package: mtd
+Version: 26
+Depends: libc, libubox20201212
+License: GPL-2.0+
+Section: utils
+Architecture: arm_cortex-a9_neon
+Installed-Size: 9877
+Filename: mtd_26_arm_cortex-a9_neon.ipk
+Size: 10650
+SHA256sum: db3d43285096a6fd342559d3021a0e0486816db006f7356d7ddeaee32813c996
+Description:  This package contains an utility useful to upgrade from other firmware or 
+ older OpenWrt releases.
+
+Package: nand-utils
+Version: 2.1.2-1
+Depends: libc
+License: GPLv2
+Section: utils
+Architecture: arm_cortex-a9_neon
+Installed-Size: 42769
+Filename: nand-utils_2.1.2-1_arm_cortex-a9_neon.ipk
+Size: 43511
+SHA256sum: be797d43c9ff8aa4ed1d252368378ff1ffb73f0f799749e672f89d3c556c86be
+Description:  Utilities for NAND devices.
+
+Package: ubi-utils
+Version: 2.1.2-1
+Depends: libc
+License: GPLv2
+Section: utils
+Architecture: arm_cortex-a9_neon
+Installed-Size: 77008
+Filename: ubi-utils_2.1.2-1_arm_cortex-a9_neon.ipk
+Size: 77683
+SHA256sum: 4e5493378b525b6e52346e589575f565316846ecc0af688f12fbf0bb9f2d287f
+Description:  Utilities for manipulating memory technology devices.
+
+Package: uboot-envtools
+Version: 2021.01-5
+Depends: libc
+License: GPL-2.0 GPL-2.0+
+Section: utils
+Architecture: arm_cortex-a9_neon
+Installed-Size: 13556
+Filename: uboot-envtools_2021.01-5_arm_cortex-a9_neon.ipk
+Size: 14313
+SHA256sum: a5628e446aabeb28aaad15a2496f4c4188ef0d05441562209bc12d0318783dcb
+Description:  This package includes tools to read and modify U-Boot bootloader environment.
+

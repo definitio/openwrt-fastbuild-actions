@@ -1,0 +1,788 @@
+Package: alsa-lib
+Version: 1.2.4-1
+Depends: libc, kmod-sound-core, libpthread, librt
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 346080
+Filename: alsa-lib_1.2.4-1_arm_cortex-a9_neon.ipk
+Size: 343418
+SHA256sum: 698b9ac513eb3541c54dec62147a06dc858431c2e97d33e37e210c2e4f566e27
+Description:  This is the library package for alsa, needed by some userspace programs.
+ You must have enabled the ALSA support in the kernel.
+
+Package: alsa-ucm-conf
+Version: 1.2.4-1
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+Architecture: all
+Installed-Size: 26586
+Filename: alsa-ucm-conf_1.2.4-1_all.ipk
+Size: 27179
+SHA256sum: 0076bc9000dbea7b963512eb7b35fcd8446412fa65e4d1ca8d4e2eb24b376230
+Description:  This is a set of configuration files needed for some ALS utilities like alsactl.
+
+Package: alsa-utils
+Version: 1.2.4-1
+Depends: libc, alsa-lib, alsa-ucm-conf, libncursesw6, libpthread
+License: GPL-2.0-or-later
+Section: sound
+Architecture: arm_cortex-a9_neon
+Installed-Size: 133212
+Filename: alsa-utils_1.2.4-1_arm_cortex-a9_neon.ipk
+Size: 132336
+SHA256sum: a9bd7257def6fed885917440249e3fa339afe8cf5c3993de2037b97b6a75a7c0
+Description:  ALSA (Advanced Linux Sound Architecture) utilities
+
+Package: avahi-dbus-daemon
+Version: 0.8-7
+Depends: libc, libavahi-dbus-support, libexpat, librt, libdaemon
+Provides: avahi-daemon
+License: LGPL-2.1-or-later
+Section: net
+CPE-ID: cpe:/a:avahi:avahi
+Architecture: arm_cortex-a9_neon
+Installed-Size: 39585
+Filename: avahi-dbus-daemon_0.8-7_arm_cortex-a9_neon.ipk
+Size: 40354
+SHA256sum: eea0432e8c436b8f639636c445e4eeb83410e523fe9350567d33c525bf2e27b8
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This package contains an mDNS/DNS-SD daemon.
+
+Package: bluez-daemon
+Version: 5.54-1
+Depends: libc, bluez-libs, bluez-utils, bluez-utils-extra, glib2, libncurses6, libreadline8, dbus, libical
+License: GPL-2.0-or-later
+Section: utils
+CPE-ID: cpe:/a:bluez:bluez
+Architecture: arm_cortex-a9_neon
+Installed-Size: 525630
+Filename: bluez-daemon_5.54-1_arm_cortex-a9_neon.ipk
+Size: 525254
+SHA256sum: 6d62ec2cb9323f036b2d8ce880ba3946d0876a1b48bfa3ba8816ef58e758d3fb
+Description:  Bluetooth daemon
+
+Package: bluez-libs
+Version: 5.54-1
+Depends: libc, libpthread, kmod-bluetooth
+License: GPL-2.0-or-later
+Section: libs
+CPE-ID: cpe:/a:bluez:bluez
+Architecture: arm_cortex-a9_neon
+Installed-Size: 51523
+Filename: bluez-libs_5.54-1_arm_cortex-a9_neon.ipk
+Size: 51879
+SHA256sum: ddfcd2e2c14d897b5c9c8fac34c985a454b1dada57420021c0fca33e48179d5e
+Description:  Bluetooth library
+
+Package: bluez-utils-extra
+Version: 5.54-1
+Depends: libc, bluez-libs, libpthread, librt, glib2, libncurses6, libreadline8, dbus
+License: GPL-2.0-or-later
+Section: utils
+CPE-ID: cpe:/a:bluez:bluez
+Architecture: arm_cortex-a9_neon
+Installed-Size: 126819
+Filename: bluez-utils-extra_5.54-1_arm_cortex-a9_neon.ipk
+Size: 127494
+SHA256sum: 9493803424a643133f975da3588573472dbc112b4f9ea88daabd8d2c5c629f2f
+Description:  Bluetooth additional utilities
+
+Package: bluez-utils
+Version: 5.54-1
+Depends: libc, bluez-libs
+License: GPL-2.0-or-later
+Section: utils
+CPE-ID: cpe:/a:bluez:bluez
+Architecture: arm_cortex-a9_neon
+Installed-Size: 473394
+Filename: bluez-utils_5.54-1_arm_cortex-a9_neon.ipk
+Size: 473158
+SHA256sum: 542e3d45785cb290601bbf6107c95a596222b608822141df7d68d365cfe206f7
+Description:  Bluetooth utilities
+
+Package: dbus
+Version: 1.13.12-1
+Depends: libc, libexpat, libdbus
+License: AFL-2.1
+Section: utils
+CPE-ID: cpe:/a:freedesktop:dbus
+Architecture: arm_cortex-a9_neon
+Installed-Size: 104753
+Filename: dbus_1.13.12-1_arm_cortex-a9_neon.ipk
+Size: 105168
+SHA256sum: 52d4c094f96398e3b2334d6f23190d05607ee79eb4856526f67be9aa86859018
+Description:  Simple interprocess messaging system (daemon)
+
+Package: glib2
+Version: 2.66.4-1
+Depends: libc, zlib, libpthread, libffi, libattr
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:gnome:glib
+Architecture: arm_cortex-a9_neon
+Installed-Size: 955840
+Filename: glib2_2.66.4-1_arm_cortex-a9_neon.ipk
+Size: 950525
+SHA256sum: e8b976aca3e2bd34dcb9372eb7046323185756b944beaa533928fc3bc32da370
+Description:  The GLib library of C routines
+
+Package: libattr
+Version: 2.4.48-2
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 5802
+Filename: libattr_2.4.48-2_arm_cortex-a9_neon.ipk
+Size: 6605
+SHA256sum: 02d4773c25ce0fd3c7253b8b3845ab6e8a41cdc51e4502c2ce9aada8165407e3
+Description:  Extended attributes support
+ This package provides libattr
+
+Package: libavahi-client
+Version: 0.8-7
+Depends: libc, avahi-dbus-daemon
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:avahi:avahi
+Architecture: arm_cortex-a9_neon
+Installed-Size: 16818
+Filename: libavahi-client_0.8-7_arm_cortex-a9_neon.ipk
+Size: 17904
+SHA256sum: cfbe1f155ed07c7bd4f77c9cd83dcbdae726ff619980dd9d23af8f838296313c
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This packages adds the libavahi-client library.
+ It also automatically adds the required
+ libavahi-dbus-support and the avahi-dbus-daemon packages.
+ For more information please see the avahi documentation.
+
+Package: libavahi-compat-libdnssd
+Version: 0.8-7
+Depends: libc, libavahi-client
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:avahi:avahi
+Architecture: arm_cortex-a9_neon
+Installed-Size: 9215
+Filename: libavahi-compat-libdnssd_0.8-7_arm_cortex-a9_neon.ipk
+Size: 10382
+SHA256sum: 80070002da2a38c28353a72712d86a4a089f358448970eca6f23bb5e3accd52c
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ This packages adds the libavahi-compat-libdnssd library.
+ It also automatically adds the required libavahi-client package.
+ For more information please see the avahi documentation.
+
+Package: libavahi-dbus-support
+Version: 0.8-7
+Depends: libc, dbus
+Provides: libavahi
+License: LGPL-2.1-or-later
+Section: libs
+CPE-ID: cpe:/a:avahi:avahi
+Architecture: arm_cortex-a9_neon
+Installed-Size: 67347
+Filename: libavahi-dbus-support_0.8-7_arm_cortex-a9_neon.ipk
+Size: 68175
+SHA256sum: 226328d5cbe937cc77e19a3b769da3959160a42323e08787590903db4d18c3ff
+Description:  Avahi is an mDNS/DNS-SD (aka RendezVous/Bonjour/ZeroConf)
+ implementation (library). It facilitates
+ service discovery on a local network -- this means that
+ you can plug your laptop or computer into a network and
+ instantly be able to view other people who you can chat with,
+ find printers to print to or find files being shared.
+ This kind of technology is already found in MacOS X
+ (branded 'Rendezvous', 'Bonjour' and sometimes 'ZeroConf')
+ and is very convenient.
+ .
+ The libavahi package contains the mDNS/DNS-SD shared libraries,
+ used by other programs. Specifically, it provides
+ libavahi-core and libavahi-common libraries.
+ .
+ The libavahi-dbus-support package enables
+ D-Bus support in avahi, needed to support
+ the libavahi-client library and avahi-utils.
+ .
+ Selecting this package modifies the build configuration
+ so that avahi packages are built with support for D-BUS enabled;
+ it does not generate a separate binary of its own.
+ It also automatically adds the D-Bus package to the build.
+ libavahi-dbus-support is selected automatically if you select
+ libavahi-client or avahi-utils.
+
+Package: libcares
+Version: 1.17.1-1
+Depends: libc
+License: MIT
+Section: libs
+CPE-ID: cpe:/a:c-ares_project:c-ares
+Architecture: arm_cortex-a9_neon
+Installed-Size: 32887
+Filename: libcares_1.17.1-1_arm_cortex-a9_neon.ipk
+Size: 33825
+SHA256sum: 7a0be05443899f70ff5ea4a439f56a2f62b32a0456985a6e4501433e4c2c15df
+Description:  c-ares is a C library for asynchronous DNS requests (including name resolves)
+ 
+ C89 compatibility, MIT licensed, builds for and runs on POSIX, Windows,
+ Netware, Android and many more operating systems.
+ 
+
+Package: libdaemon
+Version: 0.14-5
+Depends: libc
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 7762
+Filename: libdaemon_0.14-5_arm_cortex-a9_neon.ipk
+Size: 8861
+SHA256sum: 351f5ce35e643a705d510b6d952bfc73ac4640933edac0368ce2da1f8cbb7ed3
+Description:  libdaemon is a lightweight C library that eases the writing of UNIX daemons.
+ It consists of the following parts:
+ - A wrapper around fork() which does the correct daemonization procedure of a process
+ - A wrapper around syslog() for simpler and compatible log output to Syslog or STDERR
+ - An API for writing PID files
+ - An API for serializing UNIX signals into a pipe for usage with select() or poll()
+ - An API for running subprocesses with STDOUT and STDERR redirected to syslog
+ 
+ APIs like these are used in most daemon software available. It is not that
+ simple to get it done right and code duplication is not a goal.
+
+Package: libdb47
+Version: 4.7.25.4.NC-6
+Depends: libc
+Provides: libdb47-full
+License: Sleepycat
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 507727
+Filename: libdb47_4.7.25.4.NC-6_arm_cortex-a9_neon.ipk
+Size: 505838
+SHA256sum: bf5dd9a160d11a3163acb5972720aafe2fc56bc0e5640638905c8f788fcf1630
+Description:  Berkeley DB library (4.7).
+
+Package: libdbus
+Version: 1.13.12-1
+Depends: libc, libpthread
+License: AFL-2.1
+Section: utils
+CPE-ID: cpe:/a:freedesktop:dbus
+Architecture: arm_cortex-a9_neon
+Installed-Size: 109658
+Filename: libdbus_1.13.12-1_arm_cortex-a9_neon.ipk
+Size: 109995
+SHA256sum: 7e05ed250facce2b6a748b29430d8214790fc4a65f3996f9494331932216f533
+Description:  Simple interprocess messaging system (library)
+
+Package: libevdev
+Version: 1.10.1-1
+Depends: libc
+License: MIT
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 24553
+Filename: libevdev_1.10.1-1_arm_cortex-a9_neon.ipk
+Size: 24419
+SHA256sum: fdf8b1b00f0dcb719456acbff1c2600b11aa0775a00b4bea293c80080648860b
+Description:  libevdev is a wrapper library for evdev devices. it moves the common
+ tasks when dealing with evdev devices into a library and provides a
+ library interface to the callers, thus avoiding erroneous ioctls, etc.
+ 
+ The eventual goal is that libevdev wraps all ioctls available to
+ evdev devices, thus making direct access unnecessary.
+
+Package: libexpat
+Version: 2.2.10-1
+Depends: libc
+License: MIT
+Section: libs
+CPE-ID: cpe:/a:libexpat:expat
+Architecture: arm_cortex-a9_neon
+Installed-Size: 39627
+Filename: libexpat_2.2.10-1_arm_cortex-a9_neon.ipk
+Size: 40463
+SHA256sum: 87b54d391047a6d8e5d0503ddbe0839855f5443ef97ca514b51c1447269a7b53
+Description:  A fast, non-validating, stream-oriented XML parsing library.
+
+Package: libffi
+Version: 3.3-2
+Depends: libc
+License: MIT
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 12909
+Filename: libffi_3.3-2_arm_cortex-a9_neon.ipk
+Size: 13954
+SHA256sum: acef7236611defd39276287e07cc9a9062cffe784d11a047ae8ecea24e3a5e86
+Description:  The libffi library provides a portable, high level programming interface to
+ various calling conventions. This allows a programmer to call any function
+ specified by a call interface description at run-time.
+ 
+ FFI stands for Foreign Function Interface. A foreign function interface is the
+ popular name for the interface that allows code written in one language to call
+ code written in another language. The libffi library really only provides the
+ lowest, machine dependent layer of a fully featured foreign function interface.
+ A layer must exist above libffi that handles type conversions for values passed
+ between the two languages.
+
+Package: libgdbm
+Version: 1.18.1-2
+Depends: libc
+License: GPL-3.0-or-later
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 19589
+Filename: libgdbm_1.18.1-2_arm_cortex-a9_neon.ipk
+Size: 20276
+SHA256sum: 2abab99f06bea57160034767ee095362dd2c02d73e3309d5ec4386f3e544b057
+Description:  GNU database manager library
+ GNU dbm is a set of database routines that use extendible hashing and
+ works similar to the standard UNIX dbm routines.
+
+Package: libical
+Version: 3.0.6-1
+Depends: libc, libpthread
+License: LGPL-2.1-or-later MPL-2.0
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 147238
+Filename: libical_3.0.6-1_arm_cortex-a9_neon.ipk
+Size: 144754
+SHA256sum: 075c12b3c60a1688f166efc4ff822746618c67aa7c5875775183a42118b3a5c3
+Description:  Libical is an Open Source implementation of the iCalendar protocols and protocol
+ data units. The iCalendar specification describes how calendar clients can
+ communicate with calendar servers so users can store their calendar data and
+ arrange meetings with other users.
+ Libical implements RFC2445, RFC2446 and some of RFC2447.
+
+Package: liblzma
+Version: 5.2.5-3
+Depends: libc, libpthread
+License: Public-Domain LGPL-2.1-or-later GPL-2.0-or-later GPL-3.0-or-later
+Section: libs
+CPE-ID: cpe:/a:tukaani:xz
+Architecture: arm_cortex-a9_neon
+Installed-Size: 47571
+Filename: liblzma_5.2.5-3_arm_cortex-a9_neon.ipk
+Size: 48434
+SHA256sum: b406f97a5640619f02d524f16e605ba08e6eb723e09bdd55d39fba73ee9dac95
+Description:  liblzma library from XZ Utils
+
+Package: libnghttp214
+Version: 1.43.0-1
+Depends: libc
+Provides: libnghttp2
+License: MIT
+Section: libs
+ABIVersion: 14
+Architecture: arm_cortex-a9_neon
+Installed-Size: 59133
+Filename: libnghttp214_1.43.0-1_arm_cortex-a9_neon.ipk
+Size: 58717
+SHA256sum: a1b5ee691efefe92312df735f99214f8262969bf314c7f3c7717954d3d458149
+Description:  C library implementing the framing layer of the HTTP/2 protocol. It can be used to build a HTTP/2-capable HTTP client or server
+
+Package: libsqlite30
+Version: 3330000-1
+Depends: libc, libpthread, zlib
+Provides: libsqlite3
+License: PUBLICDOMAIN
+Section: libs
+ABIVersion: 0
+CPE-ID: cpe:/a:sqlite:sqlite
+Architecture: arm_cortex-a9_neon
+Installed-Size: 456538
+Filename: libsqlite30_3330000-1_arm_cortex-a9_neon.ipk
+Size: 456799
+SHA256sum: 733dcbf31b798add167b266201ca911440da2a07eccd1b5aaed564cd6d73204b
+Description:  SQLite is a small C library that implements a self-contained, embeddable,
+ zero-configuration SQL database engine.
+ This package contains the SQLite (v3.x) shared library, used by other
+ programs.
+
+Package: libudev-zero
+Version: 0.4.5-2
+Depends: libc, libevdev
+Conflicts: libudev, eudev, udev
+Provides: libudev
+License: MIT
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 9283
+Filename: libudev-zero_0.4.5-2_arm_cortex-a9_neon.ipk
+Size: 10028
+SHA256sum: 32fb4efcee90adc99a0664785d3a4cf0e5be69a2322ffe78a1ef121f9a599d4a
+Description:  Drop-in replacement for libudev
+
+Package: libuv1
+Version: 1.40.0-2
+Depends: libc, libpthread, librt
+Provides: libuv
+License: MIT
+Section: libs
+ABIVersion: 1
+CPE-ID: cpe:/a:libuv_project:libuv
+Architecture: arm_cortex-a9_neon
+Installed-Size: 54545
+Filename: libuv1_1.40.0-2_arm_cortex-a9_neon.ipk
+Size: 55304
+SHA256sum: 58ba591506f00226730c2fa0bbcae42d85449f08a617956fdc9027d86f603465
+Description:  libuv is a multi-platform support library with a focus on asynchronous I/O. It
+ was primarily developed for use by Node.js, but it's also used by Luvit, Julia,
+ pyuv, and others.
+
+Package: python3-asyncio
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 144229
+Filename: python3-asyncio_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 145243
+SHA256sum: fbab997ec23a68af3dd4e7c067e5611acdb9cc0e850b3c798848e73cbece14c3
+Description:  Python 3.9 asyncio module
+
+Package: python3-base
+Version: 3.9.2-1
+Depends: libc, libpthread, zlib
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 1167858
+Filename: python3-base_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 1161201
+SHA256sum: fc1b77a3bdaffe84a7272f6562e7faaf4bce3be65ed8b6f5d0df8e5d4258d83a
+Description:  This package contains only the interpreter and the bare minimum
+ for the interpreter to start.
+
+Package: python3-cgi
+Version: 3.9.2-1
+Depends: libc, python3-light, python3-email
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 12082
+Filename: python3-cgi_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 12985
+SHA256sum: 318f62a9aa22902e644e42957ab182e7170d42bb1ba1c94d9755d1cc3454fc75
+Description:  Python 3.9 cgi module
+
+Package: python3-cgitb
+Version: 3.9.2-1
+Depends: libc, python3-light, python3-cgi, python3-pydoc
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 5518
+Filename: python3-cgitb_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 6400
+SHA256sum: 89bba5475d96679de9339c78323be3a6113bcbae20aee157ef838560b5fc2840
+Description:  Python 3.9 cgitb module
+
+Package: python3-codecs
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 763395
+Filename: python3-codecs_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 736270
+SHA256sum: 760b0a7a0cf6ba2d55cd1879c3339457efddda70f5a35221210adf36df59740e
+Description:  Python 3.9 codecs + unicode support
+
+Package: python3-ctypes
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 70029
+Filename: python3-ctypes_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 70636
+SHA256sum: 268596b05326c338a36ec0c2b65665ac47f86ec4f23d9585149478cc1013957b
+Description:  Python 3.9 ctypes module
+
+Package: python3-dbm
+Version: 3.9.2-1
+Depends: libc, python3-light, libdb47
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 10875
+Filename: python3-dbm_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 11736
+SHA256sum: 6f74692b5b6703eae9b7143b98169587a32527c32418e134df8e8319825965ab
+Description:  Python 3.9 dbm module
+
+Package: python3-decimal
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 77451
+Filename: python3-decimal_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 78034
+SHA256sum: a54ea53be8e778d94619d3275a01cfc01a506336b6f74e13c453ac2fe38627e7
+Description:  Python 3.9 decimal module
+
+Package: python3-distutils
+Version: 3.9.2-1
+Depends: libc, python3-light, python3-email
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 175756
+Filename: python3-distutils_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 176765
+SHA256sum: a8cdb1bc5190978779d0cc6eb62777b46a028b1d4a7d04e3af20bbedf71afd21
+Description:  Python 3.9 distutils module
+
+Package: python3-email
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 112987
+Filename: python3-email_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 114008
+SHA256sum: 9779b4f0f7d5ffd0d670ff2dfe2f208e62502e312e2b067a231a04dbfb2b29a0
+Description:  Python 3.9 email module
+
+Package: python3-evdev
+Version: 1.4.0-1
+Depends: libc, python3-light, python3-ctypes
+License: BSD-3-Clause
+Section: lang
+Architecture: arm_cortex-a9_neon
+Installed-Size: 40977
+Filename: python3-evdev_1.4.0-1_arm_cortex-a9_neon.ipk
+Size: 41429
+SHA256sum: 725f9226965a5bb1e506ac827855a1bfd592c6f106c9c8a7802032be8f79b695
+Description:  Bindings to the Linux input handling subsystem
+
+Package: python3-gdbm
+Version: 3.9.2-1
+Depends: libc, python3-light, libgdbm
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 6710
+Filename: python3-gdbm_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 7573
+SHA256sum: 0d3b777453dc88c78d677af54858d9f6b51ec7e17b06cbdf05c3e296b7e5694b
+Description:  Python 3.9 gdbm module
+
+Package: python3-light
+Version: 3.9.2-1
+Depends: libc, python3-base, libffi, libbz21.0, libuuid1
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 1844804
+Filename: python3-light_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 1844904
+SHA256sum: 4f1c6b52ebdec1b7ff6448d3a1e98f861eb057a32236d57f8c1dbc58381e01ca
+Description:  This package is essentially the python3-base package plus
+ a few of the rarely used (and big) libraries stripped out
+ into separate packages.
+
+Package: python3-logging
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 52110
+Filename: python3-logging_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 53100
+SHA256sum: 93ad9c44beaf302a77e6c58fa641eaff18789276a5218fea8c6171c0bd4340c2
+Description:  Python 3.9 logging module
+
+Package: python3-lzma
+Version: 3.9.2-1
+Depends: libc, python3-light, liblzma
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 15598
+Filename: python3-lzma_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 16443
+SHA256sum: c28587d3b52915eb96069cacd5ea516cea35dec13fb1b6a502bb759e467634b1
+Description:  Python 3.9 lzma module
+
+Package: python3-multiprocessing
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 99009
+Filename: python3-multiprocessing_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 100018
+SHA256sum: 8e9f225997d293ba3a4883b638f9572d5611c1b1b36f5db6a4dfa356f7b9cce7
+Description:  Python 3.9 multiprocessing
+
+Package: python3-ncurses
+Version: 3.9.2-1
+Depends: libc, python3-light, libncurses6
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 47579
+Filename: python3-ncurses_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 48186
+SHA256sum: 4a57fb5848f72a42d1a5ac60362450b73543c813bfb061a150ce368f1b77897b
+Description:  Python 3.9 ncurses module
+
+Package: python3-openssl
+Version: 3.9.2-1
+Depends: libc, python3-light, libopenssl1.1, ca-certs
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 63168
+Filename: python3-openssl_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 62713
+SHA256sum: 8c13f1a57cb8c9995b6cd3753017b5058904837e0aedc0639454eff92e9b3220
+Description:  Python 3.9 SSL module
+
+Package: python3-pkg-resources
+Version: 49.2.1-1
+Depends: libc, python3
+License: MIT
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 151079
+Filename: python3-pkg-resources_49.2.1-1_arm_cortex-a9_neon.ipk
+Size: 152083
+SHA256sum: dabe0094b0109407e84e3e3004149df305ce0fbc5a0ba1201013a52af6553607
+Description:  Python 3.9 pkg_resources module (part of setuptools)
+
+Package: python3-pydoc
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 191435
+Filename: python3-pydoc_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 192405
+SHA256sum: fb8913457389a745c96c8d95ca2b65746b0ad8d18dc0bd208e343a69d7813468
+Description:  Python 3.9 pydoc module
+
+Package: python3-sqlite3
+Version: 3.9.2-1
+Depends: libc, python3-light, libsqlite30
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 25554
+Filename: python3-sqlite3_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 26228
+SHA256sum: ef8e1ce8ce2d0633e4be7da285abc89e04579855b145a978625a2c8492a91895
+Description:  Python 3.9 sqlite3 module
+
+Package: python3-unittest
+Version: 3.9.2-1
+Depends: libc, python3-light
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 76388
+Filename: python3-unittest_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 77380
+SHA256sum: a47e12ce121eb51466ba37f4b7c4a05ceb8f6f5f9ff44952a21b91fe23d033a9
+Description:  Python 3.9 unittest module
+
+Package: python3-urllib
+Version: 3.9.2-1
+Depends: libc, python3-light, python3-email
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 50875
+Filename: python3-urllib_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 51893
+SHA256sum: 36739a403271840c564c0e58894a7f99f86548461a7ab15ae76ecf90ce65cd9b
+Description:  Python 3.9 URL library module
+
+Package: python3-xml
+Version: 3.9.2-1
+Depends: libc, python3-light, python3-urllib
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 197216
+Filename: python3-xml_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 197999
+SHA256sum: 9c9e379dbd6c39bbebc6615a2bd4f6fc6ec185c9dfd483f4fecc8b0249885554
+Description:  Python 3.9 xml libs
+
+Package: python3
+Version: 3.9.2-1
+Depends: libc, python3-light, python3-unittest, python3-ncurses, python3-ctypes, python3-pydoc, python3-logging, python3-multiprocessing, python3-codecs, python3-gdbm, python3-sqlite3, python3-xml, python3-distutils, python3-email, python3-openssl, python3-urllib, python3-cgi, python3-cgitb, python3-dbm, python3-asyncio, python3-lzma, python3-decimal
+License: Python/2.0
+Section: lang
+CPE-ID: cpe:/a:python:python
+Architecture: arm_cortex-a9_neon
+Installed-Size: 105
+Filename: python3_3.9.2-1_arm_cortex-a9_neon.ipk
+Size: 1121
+SHA256sum: 80d3b7ea7da6218ef271704b4381025eae1dec8b05db831cd8a14eec48ad73a9
+Description:  This package contains the (almost) full Python install.
+ It's python3-light + all other packages.
+

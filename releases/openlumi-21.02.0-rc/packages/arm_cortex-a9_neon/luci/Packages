@@ -1,0 +1,24 @@
+Package: rpcd-mod-luci
+Version: 20201107
+Depends: libc, rpcd, libubox20201212, libubus20210215, libnl-tiny1
+License: Apache-2.0
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 11835
+Filename: rpcd-mod-luci_20201107_arm_cortex-a9_neon.ipk
+Size: 12698
+SHA256sum: d0cabec1868f53ec39b736b711996342b931fa29fa482d58adbfbdfc764b6096
+Description:  Provides LuCI backend ubus RPC operations.
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox20201212, libubus20210215
+License: Apache-2.0
+Section: libs
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3460
+Filename: rpcd-mod-rrdns_20170710_arm_cortex-a9_neon.ipk
+Size: 4287
+SHA256sum: dc3a0e4e55419a9ef74f422a6602cf322cd8a727fb44bbb7a39ad5ef33a280c9
+Description:  Provides rapid mass reverse DNS lookup functionality.
+

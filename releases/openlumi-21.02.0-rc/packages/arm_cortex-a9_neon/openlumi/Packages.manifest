@@ -1,0 +1,102 @@
+Package: lumimqtt
+Version: 1.0.11-2
+Depends: libc, python3, python3-evdev, python3-pkg-resources, python3-logging, python3-asyncio, python3-openssl, python3-aio-mqtt
+Source: feeds/openlumi/apps/lumimqtt
+SourceName: lumimqtt
+License: GPL-3.0
+LicenseFiles: PKG-INFO
+Section: openlumi
+SourceDateEpoch: 1623873406
+Maintainer: Ivan Belokobylskiy <belokobylskij@gmail.com>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 14314
+Filename: lumimqtt_1.0.11-2_arm_cortex-a9_neon.ipk
+Size: 15153
+SHA256sum: 11bd6b9d8683e8f01e98ad28b46f978bc16d72c3998651b52e35efae695f4844
+Description:  MQTT agent for Xiaomi Lumi gateway
+
+Package: node-espruinohub
+Version: 1-1
+Depends: libc, node, libudev
+Source: feeds/openlumi/apps/node-espruinohub
+SourceName: node-espruinohub
+License: MIT
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1623873406
+Maintainer: mrG1K <mr@g1k.ru>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 2714767
+Filename: node-espruinohub_1-1_arm_cortex-a9_neon.ipk
+Size: 2711107
+SHA256sum: d688b4910a739faac35a42c7a47bd418b39afbc66c2d690955718ecd20d2b35a
+Description:  A BLE -> MQTT bridge for Raspberry Pi and other Embedded devices
+
+Package: node-lumi
+Version: 1-1
+Depends: libc, node, libudev
+Source: feeds/openlumi/apps/node-lumi
+SourceName: node-lumi
+License: MIT
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1623873406
+Maintainer: mrG1K <mr@g1k.ru>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 1755773
+Filename: node-lumi_1-1_arm_cortex-a9_neon.ipk
+Size: 1755035
+SHA256sum: c4b1aac5a8a2c01d3100294867e25c2ee3c6e85ed81cbd80483b12237eaa716b
+Description:  node-lumi
+
+Package: node-onvif2mqtt
+Version: 1-1
+Depends: libc, node
+Source: feeds/openlumi/apps/node-onvif2mqtt
+SourceName: node-onvif2mqtt
+License: MIT
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1623873406
+Maintainer: mrG1K <mr@g1k.ru>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 1108899
+Filename: node-onvif2mqtt_1-1_arm_cortex-a9_neon.ipk
+Size: 1106689
+SHA256sum: f03bf952c13372a58f33244ba0d6c3deb2c35c63425aa67b272993107caac839
+Description:  node-onvif2mqtt
+
+Package: node-zigbee2mqtt-dev
+Version: dev-20210705
+Depends: libc, node
+Source: feeds/openlumi/apps/node-zigbee2mqtt-dev
+SourceName: node-zigbee2mqtt-dev
+License: GPL-3.0
+LicenseFiles: LICENSE
+Section: lang
+SourceDateEpoch: 1623873406
+Maintainer: Hirokazu MORIKAWA <morikw2@gmail.com>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 3449109
+Filename: node-zigbee2mqtt-dev_dev-20210705_arm_cortex-a9_neon.ipk
+Size: 3443088
+SHA256sum: 3049b943887b5cd1db5645ffd42840a6b17f344785af4be874b9a1658a21c261
+Description:  Allows you to use your Zigbee devices without the vendors bridge or gateway. It bridges events and allows you to control your Zigbee devices via MQTT. In this way you can integrate your Zigbee devices with whatever smart home infrastructure you are using.
+
+Package: python3-aio-mqtt
+Version: 0.2.0-1
+Depends: libc, python3
+Source: feeds/openlumi/libs/python3-aio-mqtt
+SourceName: python3-aio-mqtt
+License: APACHE
+LicenseFiles: PKG-INFO
+Section: lang
+SourceDateEpoch: 1623873406
+Maintainer: divanikus <d1pro@yandex.ru>
+Architecture: arm_cortex-a9_neon
+Installed-Size: 15615
+Filename: python3-aio-mqtt_0.2.0-1_arm_cortex-a9_neon.ipk
+Size: 16380
+SHA256sum: d50239f43812b1d21eeb2965a7b2a2fd3402f7691056bb20f1d17d234a162037
+Description:  Asynchronous MQTT client for 3.1.1 protocol version.
+
